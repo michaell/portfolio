@@ -1,0 +1,62 @@
+.footer {
+	background-color: #414141;
+}
+
+.design_information {
+	float: left;
+	width: 380px;
+}
+
+.design_information__copyright {
+	line-height: 50px;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.socials {
+	float: right;
+	width: 140px;
+}
+
+.socials__list {
+	list-style: none;
+	padding-top: 10px;
+	margin: 0;
+	text-align: right;	
+}
+
+.socials__item {
+	display: inline-block;
+/*	line-height: 50px;*/
+}
+
+.socials__img {
+	vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

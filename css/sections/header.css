@@ -15,6 +15,8 @@
 	width: 60px;
 	height: 60px;
 	border-radius: 50%;
+	border: 1px solid #bebebe;
+	vertical-align: middle;
 }
 
 .about_information__portrait {
@@ -23,4 +25,41 @@
 
 .about_information__name {
 	display: inline-block;
+	line-height: 80px;
+	font-weight: 400;
+	margin-left: 15px;
 }
+
+.contacts {
+	color: #32c3e5;
+	font-family: "Fira Sans";
+	font-weight: 700;
+	border-bottom: 1px dotted #32c3e5;
+	margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
