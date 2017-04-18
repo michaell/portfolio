@@ -1,0 +1,26 @@
+.head {
+	background-color: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); 
+}
+
+.аbout_information {
+	float: left;
+}
+
+.contacts {
+	float: right;
+}
+
+.about_information__image {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+.about_information__portrait {
+	display: inline-block;
+}
+
+.about_information__name {
+	display: inline-block;
+}
