@@ -4,16 +4,33 @@
 	box-sizing: border-box;
 }
 
+html {
+	width: 100%;
+	height: 100%;
+	background-color: #f6f6f6;
+}
+
 body {
 	font-family: "Fira Sans", Tahoma, Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 300;
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
 }
 
 .container {
 	width: 940px;
 	margin: 0 auto;
-	
+}
+
+.empty {
+	height: 50px;
 }
 
 .clearfix:after {

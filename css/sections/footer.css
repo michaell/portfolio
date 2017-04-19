@@ -1,5 +1,8 @@
 .footer {
 	background-color: #414141;
+	height: 50px;
+	margin-top: -50px;
+	position: relative;
 }
 
 .design_information {
@@ -16,9 +19,57 @@
 
 .socials {
 	float: right;
-	width: 140px;
+	padding-top: 10px;
 }
 
+.socials__link {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: url(../../img/icons/sprite.png);
+}
+
+.socials__link:hover {
+	background: url(../../img/icons/sprite.png) 0 -32px;
+}
+
+.socials__link_vk {
+	background: url(../../img/icons/sprite.png) -33px 0;
+}
+
+.socials__link_vk:hover {
+	background: url(../../img/icons/sprite.png) -33px -32px;
+}
+
+.socials__link_tw {
+	background: url(../../img/icons/sprite.png) -65px 0;
+}
+
+.socials__link_tw:hover {
+	background: url(../../img/icons/sprite.png) -65px -32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .socials__list {
 	list-style: none;
 	padding-top: 10px;
@@ -37,6 +88,7 @@
 .socials__img:hover {
 	
 }
+*/
 
 
 
