@@ -24,7 +24,8 @@
 	height: 230px;
 	overflow: hidden;
 	border-radius: 50%;
-	margin: 0 auto;
+	margin: -6px 56px;
+/*	margin: 0 auto;*/
 	position: relative;
 	border: 5px solid white;
 }
@@ -39,6 +40,7 @@
 	float: left;
 	width: 380px;
 	text-align: left;
+	margin-left: 40px;
 }
 
 .about__headline {
@@ -46,21 +48,28 @@
 	font-weight: 500;
 }
 
+.about_me__button_wrapper {
+	text-align: right;
+	margin-top: 65px;
+}
+
 .about_me__button {
-	width: 170px;
-	
+	display: inline-block;
 }
 
 .about_me__link {
-	padding: 10px;
-	width: 170px;
+	padding: 10px 20px;
 	color: #e85f61;
-	font-family: OpenSans;
+	font-family: "Open Sans";
 	font-size: 14px;
+	font-weight: 700;
 	border: 2px solid #e85f61;
+	border-radius: 50px;
 }
 
-
+.about_me__icon {
+	margin-right: 7px;
+}
 
 
 

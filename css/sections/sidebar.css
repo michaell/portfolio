@@ -6,12 +6,24 @@
 }
 
 .sideMenu__item {
-	line-height: 40px;
-	font-weight: 700;
+	line-height: 42px;
+	font-weight: 400;
+	padding-right: 28px;
 }
 
 .sideMenu__item:hover {
 	color: #33c1e3;
+/*	transition: all .5s ease*/
+}
+
+.sideMenu__item:hover::after {
+	display: inline-block;
+	content: '';
+	height: 44px;
+	width: 6px;
+	background: #33c1e3;
+	margin-left: 22px;
+	position: absolute;
 }
 
 .side_menu__link:visited {
@@ -19,5 +31,5 @@
 }
 
 .sideMenu__icon {
-	margin-right: 7px;
+	margin-right: 10px;
 }
