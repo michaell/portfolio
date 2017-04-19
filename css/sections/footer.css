@@ -11,6 +11,7 @@
 	line-height: 50px;
 	font-size: 14px;
 	font-weight: 300;
+	color: #9c9c9c;
 }
 
 .socials {
@@ -27,13 +28,15 @@
 
 .socials__item {
 	display: inline-block;
-/*	line-height: 50px;*/
 }
 
 .socials__img {
 	vertical-align: middle;
 }
 
+.socials__img:hover {
+	
+}
 
 
 
