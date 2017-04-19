@@ -1,6 +1,7 @@
 .head {
 	background-color: #fff;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); 
+	padding: 10px 0 10px;
 }
 
 .аbout_information {
@@ -9,34 +10,38 @@
 
 .contacts {
 	float: right;
-}
-
-.about_information__image {
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-	border: 1px solid #bebebe;
-	vertical-align: middle;
-}
-
-.about_information__portrait {
-	display: inline-block;
-}
-
-.about_information__name {
-	display: inline-block;
-	line-height: 80px;
-	font-weight: 400;
-	margin-left: 15px;
-}
-
-.contacts {
 	color: #32c3e5;
 	font-family: "Fira Sans";
 	font-weight: 700;
 	border-bottom: 1px dotted #32c3e5;
-	margin-top: 30px;
+	margin-top: 20px;
 }
+
+.about_information__portrait {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 1px solid #bebebe;
+	overflow: hidden;
+	position: relative;
+	vertical-align: middle;	
+}
+
+.about_information__image {
+	position: absolute;
+	top: 0;
+	right: -9px;
+	width: 70px;
+}
+
+.about_information__name {
+	display: inline-block;
+	font-weight: 400;
+	vertical-align: middle;
+	margin-left: 15px;
+}
+
 
 
 

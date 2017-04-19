@@ -13,3 +13,11 @@
 .sideMenu__item:hover {
 	color: #33c1e3;
 }
+
+.side_menu__link:visited {
+	color: #33c1e3;
+}
+
+.sideMenu__icon {
+	margin-right: 7px;
+}
