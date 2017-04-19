@@ -9,11 +9,19 @@
 	line-height: 42px;
 	font-weight: 400;
 	padding-right: 28px;
+	color: #414141; 
 }
 
-.sideMenu__item:hover {
+.side_menu__link {
+	color: #414141;
+}
+
+.side_menu__link:visited {
+	color: #414141; 
+}
+
+.side_menu__link:hover {
 	color: #33c1e3;
-/*	transition: all .5s ease*/
 }
 
 .sideMenu__item:hover::after {
@@ -26,9 +34,6 @@
 	position: absolute;
 }
 
-.side_menu__link:visited {
-	color: #33c1e3;
-}
 
 .sideMenu__icon {
 	margin-right: 10px;
