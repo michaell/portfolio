@@ -28,6 +28,12 @@ body {
 	position: relative;
 }
 
+.wrapper:after {
+	content: '';
+	height: 55px;
+	display: block;
+}
+
 .container {
 	width: 940px;
 	margin: 0 auto;
