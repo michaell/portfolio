@@ -42,17 +42,17 @@
 	font-weight: 500;
 }
 
-.page_description__button_wrapper {
+.about_btn {
 	text-align: right;
 	margin-top: 65px;
 	height: 50px;
 }
 
-.page_description__button {
+.about_btn__btn {
 	display: inline-block;
 }
 
-.page_description__link {
+.about_btn__link {
 	padding: 10px 20px;
 	color: #e85f61;
 	font-family: "Open Sans";
@@ -62,7 +62,12 @@
 	border-radius: 50px;
 }
 
-.page_description__icon {
+.about_btn__link:hover {
+	background-color: #efcfcf;
+	transition: all .4s ease
+}
+
+.about_btn__icon {
 	margin-right: 7px;
 }
 
