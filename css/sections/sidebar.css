@@ -6,19 +6,19 @@
 .navigation__list {
 	list-style: none;
 	padding: 0;
-	margin-top: 6px;
+	margin: 6px 3px 0 0;
 	text-align: right;
 }
 
 .navigation__item {
-	margin-bottom: 25px;
 	font-weight: 400;
-	margin-right: 28px;
-	color: #414141; 
+	color: #414141;
+	padding-bottom: 25px;
 }
 
 .navigation__link {
 	color: #414141;
+	padding: 7px 24px 9px 0;
 }
 
 .navigation__link:visited {
@@ -27,18 +27,10 @@
 
 .navigation__link:hover {
 	color: #33c1e3;
-	transition: all .2s ease;
-}
-
-.navigation__item:hover::after {
-	display: inline-block;
-	content: '';
-	height: 44px;
-	width: 6px;
-	background: #33c1e3;
-	margin-top: -11px;
-   margin-left: 22px;
-	position: absolute;
+	transition: color .2s ease;
+	border-right: 6px solid #33c1e3;
+	margin-right: -6px;
+	transition: color .2s ease;
 }
 
 .navigation__icon {
