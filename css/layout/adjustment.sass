@@ -1,3 +1,5 @@
+$main-color: #33c1e3
+
 *
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
@@ -27,20 +29,27 @@ body
     display: block
 
 .container
-  width: 940px
-  margin: 0 auto
+	width: 940px
+	margin: 0 auto
+	@extend %clearfix
+	
 
 .empty
   height: 50px
 
-.clearfix:after
-  content: ''
-  display: table
-  clear: both
-
 ul
-  padding: 0
-  margin: 0
+	padding: 0
+	margin: 0
+	li
+		list-style: none
 
 a
   text-decoration: none
+
+.page_content
+  float: left
+  width: 720px
+
+.page_title
+	line-height: 45px
+	font-weight: 500
