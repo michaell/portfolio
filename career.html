@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-<!--	<link rel="stylesheet" href="css/base.css">-->
+	<link rel="stylesheet" href="css/base.css">
 </head>
 <body>
 	
 	<div class="wrapper">
 		<header class="head">
-			<div class="container clearfix">
+			<div class="container">
 				<div class="аbout_information">
 					<div class="about_information__portrait">
 						<img src="img/content/icon_hello_page.jpg" class="about_information__image" alt="Омелько М.М. - фото">
@@ -18,9 +18,11 @@
 						Омелько Михаил
 					</div>
 				</div>
-				<div class="contacts">
-					Мои контакты
-				</div>
+					<div class="contacts">
+						<div class="contacts_underline"> 
+							Мои контакты
+						</div> <!-- Это кнопка, которая вызывает попап. Будет правильнее использовать <button> -->
+					</div>
 			</div>
 		</header>
 		<section class="content">
@@ -29,7 +31,7 @@
 					<nav class="navigation">
 						<ul class="navigation__list">
 							<li class="navigation__item">
-								<a href="" class="navigation__link">
+								<a href="index.html" class="navigation__link">
 									<span class="navigation__icon fa fa-user-secret"></span>
 									<span class="navigation__text">Обо мне</span>
 								</a>
@@ -41,7 +43,7 @@
 								</a>
 							</li>
 							<li class="navigation__item">
-								<a href="" class="navigation__link">
+								<a href="portfolio.html" class="navigation__link">
 									<span class="navigation__icon fa fa-briefcase"></span>
 									<span class="navigation__text">Портфолио</span>
 								</a>
@@ -96,20 +98,19 @@
 				</main>
 			</div>
 		</section>
-			
-		
 	</div>
+	
 	<footer class="footer">
-		<div class="container clearfix">
+		<div class="container">
 			<div class="design_information">
 				<div class="design_information__copyright">
 					&copy Дизайн сайта был разработан в школе Loftschool
 				</div>
 			</div>
 			<div class="socials">
-				<a href="#" class="socials__link socials__link_fb"></a>
-				<a href="#" class="socials__link socials__link_vk"></a>
-				<a href="#" class="socials__link socials__link_tw"></a>
+				<a href="#" class="socials__link socials__link--fb"></a>
+				<a href="#" class="socials__link socials__link--vk"></a>
+				<a href="#" class="socials__link socials__link--tw"></a>
 			</div>
 		</div>
 	</footer>
