@@ -1,0 +1,134 @@
+.career
+	margin-left: 20px
+	@extend %clearfix
+
+.page_title__career 
+	margin: -8px 0 21px
+
+.career__info
+	@extend %clearfix
+
+.career__image
+	width: 220px
+	float: left
+	width: 220px
+	
+	
+.career__pic
+	width: 220px
+	height: 220px
+	overflow: hidden
+	position: relative
+	border-radius: 10px
+	float: left
+
+.career__img
+	position: absolute
+	top: 0
+	left: -36%
+
+.jobs
+	float: right
+	width: 460px
+	text-align: right
+
+
+.jobs__item
+	width: 380px
+	padding: 20px 20px 10px 20px
+	background-color: white
+	border-radius: 10px
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2)
+	margin-bottom: 20px
+	color: #5a5a5a
+	display: inline-block
+	text-align: left
+	position: relative
+	&:hover
+		background-color: $main-color
+		color: white
+		.jobs__year:after
+			border-color: #94e0f2
+
+.jobs__item:hover .jobs__year
+	color: $main-color
+	font-size: 18px
+	font-weight: 700
+
+.jobs__item:hover .jobs__occupation
+	color: white
+
+.jobs__item
+	&:after, &:before
+		content: ""
+		display: block
+		width: 1px
+		background-color: #dddddd
+		position: absolute
+		right: 100%
+		margin-right: 20px
+
+
+.jobs__item:first-child:before
+	display: none
+
+jobs__item:last-child:after
+	display: none
+
+.jobs__item:before
+	top: 0
+	bottom: 50%
+	
+.jobs__item:after
+	top: 50%
+	bottom: -25px
+	
+	
+.jobs__title
+	font-size: 21px
+	line-height: 23px
+	font-weight: 400
+
+.jobs__occupation
+	color: #727272
+	font-size: 18px
+	font-weight: 300
+
+.jobs__time
+	@extend .jobs__occupation
+
+.jobs__year
+	font-size: 14px
+	line-height: 28px
+	font-weight: 300
+	position: absolute
+	top: 50%
+	margin-top: -14px
+	right: 100%
+	margin-right: 35px
+	z-index: 10
+	&:after
+		content: ''
+		display: block
+		width: 10px
+		height: 10px
+		background-color: $main-color
+		border-radius: 50%
+		position: absolute
+		right: -25px
+		top: 50%
+		margin-top: -10px
+		border: 5px solid #f6f6f6
+	
+
+
+
+
+
+
+
+
+
+
+
+
