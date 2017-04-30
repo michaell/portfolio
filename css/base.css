@@ -4056,6 +4056,9 @@ button {
   .about_information__name {
     font-size: 14px;
   }
+  .sidebar {
+    margin-bottom: 20px;
+  }
   .navigation__list {
     text-align: left;
   }
@@ -4065,12 +4068,12 @@ button {
   .navigation__icon {
     display: none;
   }
-  .portrait {
-    margin: 10px 0 10px;
-  }
   .portrait__face {
     width: 140px;
     height: 140px;
+  }
+  .page_title__about {
+    margin-bottom: -10px;
   }
   .page_description__text {
     font-size: 16px;
@@ -4078,11 +4081,28 @@ button {
   .page_title {
     font-size: 35px;
   }
+  .jobs__item {
+    width: 100%;
+  }
+  .page_title__portfolio {
+    margin-top: 40px;
+  }
   .works-item {
     width: 100%;
   }
   .works-pic-img {
     width: 100%;
+  }
+  .footer {
+    height: 115px;
+    margin-top: -115px;
+    padding: 15px 0 15px;
+  }
+  .wrapper:after {
+    height: 115px;
+  }
+  .design_information__copyright {
+    line-height: 25px;
   }
 }
 
