@@ -20,14 +20,14 @@
 					</div>
 				</div>
 				<button class="contacts">
-					<div class="contacts__underline"> <!-- Что-то тут не так) Зачем этот div? Border можно задать непосредственнно для button, так же как и другие стили. @@@@@@@-->
+					<div class="contacts__underline">  <!--					Что-то тут не так) Зачем этот div? Border можно задать непосредственнно для button, так же как и другие стили. ---------- Я button выравнивал по вертикали, выставляя высоту строки, равную высоте хедера, поэтому бордером подчеркивание сделать не вышло - он слишком низко получался ... Поэтому пришлось изобрести костыль -->
 						Мои контакты
 					 </div>
 				</button>
 			</div>
 		</header>
 			
-		<section class="content"> <!-- Почему тут у тебя section? Ответить можно тут или в нашем чатике) @@@@@@@ -->
+		<section class="content"> <!-- Почему тут у тебя section? Ответить можно тут или в нашем чатике) --------- Ну во-первых потому что section был на макете:) Во-вторых по документации тоже подходит вроде бы (The <section> element represents a generic section of a document or application.)  Или лучше использовать обычный div? в данном случае -->
 			<div class="container">
 				<aside class="sidebar"> 
 					<nav class="navigation">
@@ -59,7 +59,7 @@
 							<img src="img/content/icon_about_page.jpg" class="portrait__image" alt="Омелько М.М. - фото">
 						</div>
 					</div>
-					<div class="page_description"> <!-- А вот тут как раз можно вспомнить про новые семантические теги HTML5 @@@@@@-->
+					<div class="page_description"> <!-- А вот тут как раз можно вспомнить про новые семантические теги HTML5 ----------Что тут можно использовать? Article врядли.. Убрать section сверху и использовать здесь? -->
 						<h1 class="page_title page_title__about">Обо мне</h1>
 						<div class="page_description__text">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt repudiandae dolorem, consequatur omnis delectus ullam architecto animi. Esse, deleniti, labore? Quisquam ea quod numquam, expedita alias nemo deserunt. Eos repellendus quod temporibus dicta nulla dolore, expedita vero dolorem magni molestiae.
