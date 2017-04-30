@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.container:after, .career:after, .career__info:after, .works:after {
+.container:after, .page_content:after, .career:after, .career__info:after, .works:after {
   content: "";
   display: block;
   clear: both;
@@ -413,7 +413,7 @@ body {
 }
 
 .container {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
 }
 
@@ -3738,6 +3738,7 @@ button {
 
 .works-pic-img {
   vertical-align: middle;
+  width: 100%;
 }
 
 .works-descr {
@@ -3826,11 +3827,14 @@ button {
 
 @media screen and (max-width: 992px) {
   .container {
-    width: 750px;
+    width: 730px;
+  }
+  .content {
+    padding-top: 25px;
   }
   .sidebar {
     width: 100%;
-    margin-bottom: 35px;
+    float: none;
   }
   .navigation__item {
     display: inline-block;
@@ -3840,10 +3844,21 @@ button {
     margin: 0;
   }
   .navigation__link {
-    padding: 0 60px 0 0;
+    padding: 0 25px 0 0;
+  }
+  .page_content {
+    float: none;
+    width: 100%;
+  }
+  .page_content__about {
+    margin-top: 25px;
+  }
+  .page_content__portfolio {
+    margin-top: 5px;
+    padding: 0;
   }
   .portrait {
-    width: 35%;
+    width: 30%;
   }
   .portrait__face {
     margin: 0 auto;
@@ -3851,14 +3866,51 @@ button {
     height: 176px;
   }
   .page_description {
-    width: 65%;
+    width: 70%;
     margin: 0;
+    padding-left: 30px;
+  }
+  .works {
+    width: 100%;
+  }
+  .works-item {
+    width: 230px;
+    margin-right: 20px;
+  }
+  .page_content__career {
+    margin-top: 25px;
+  }
+  .career {
+    margin-left: 0;
+  }
+  .career__image {
+    width: 230px;
+    height: 230px;
+  }
+  .career__pic {
+    width: 100%;
+    height: 100%;
+  }
+  .jobs__item {
+    width: 355px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .container {
     width: 480px;
+  }
+  .contacts {
+    background: url(../img/icons/phone.png) center center no-repeat;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    font-size: 0;
+    line-height: 80px;
+    margin-top: 10px;
+  }
+  .contacts__underline {
+    display: none;
   }
   .navigation__list {
     text-align: justify;
@@ -3868,7 +3920,7 @@ button {
   .navigation__item {
     padding: 0;
     font-size: 18px;
-    margin-left: 43px;
+    margin-left: 25px;
   }
   .navigation__item:first-child {
     margin-left: 0;
@@ -3882,7 +3934,7 @@ button {
     margin-right: 0px;
   }
   .sidebar {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
   }
   .page_content {
     width: 100%;
@@ -3891,15 +3943,19 @@ button {
     float: none;
     width: 100%;
     text-align: center;
-    margin-bottom: 20px;
   }
   .portrait__face {
     display: inline-block;
+  }
+  .page_title__about {
+    margin: 0;
+    margin-bottom: 10px;
   }
   .page_description {
     float: none;
     width: 100%;
     margin-left: 0;
+    padding-left: 0;
   }
   .page_description__text {
     text-align: justify;
@@ -3909,6 +3965,7 @@ button {
   }
   .page_title__about {
     text-align: center;
+    margin-bottom: -20px;
   }
   .about_btn {
     text-align: center;
@@ -3936,6 +3993,57 @@ button {
   .socials__list {
     display: inline-block;
   }
+  .about_btn {
+    margin-bottom: 50px;
+  }
+  .page_title__career {
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .career__image {
+    float: none;
+    width: 230px;
+    margin: 0 auto 20px;
+  }
+  .jobs {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .jobs__item {
+    width: 440px;
+  }
+  .jobs__year {
+    display: none;
+  }
+  .jobs__item:after, .jobs__item:before {
+    display: none;
+  }
+  .page_title__portfolio {
+    text-align: center;
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: 25px;
+  }
+  .works-item {
+    display: inline-block;
+    width: 230px;
+    margin-right: 20px;
+  }
+  .works-item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .works-item:nth-child(3n) {
+    margin-right: 20px;
+  }
+  .footer {
+    height: 95px;
+    margin-top: -95px;
+  }
+  .wrapper:after {
+    height: 95px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -3946,10 +4054,13 @@ button {
     font-size: 14px;
   }
   .navigation__list {
-    text-align: center;
+    text-align: left;
   }
   .navigation__item {
     font-size: 14px;
+  }
+  .navigation__icon {
+    display: none;
   }
   .portrait {
     margin-bottom: 10px;
@@ -3963,6 +4074,12 @@ button {
   }
   .page_title {
     font-size: 35px;
+  }
+  .works-item {
+    width: 100%;
+  }
+  .works-pic-img {
+    width: 100%;
   }
 }
 
