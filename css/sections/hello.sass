@@ -1,0 +1,64 @@
+.wrapper--hello
+	background: url(../img/background/bg_hello.jpg)
+	&:after
+		content: ''
+		display: block
+		margin-top: -55px
+
+.greeting-wrapper
+	text-align: center
+	height: 100vh
+	&:before
+		display: inline-block
+		height: 100%
+		vertical-align: middle
+		content: ''
+
+.greeting
+	position: relative
+	width: 300px
+	background-color: white
+	border-radius: 10px
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3)
+	display: inline-block
+	vertical-align: middle
+
+.greeting__name
+	padding: 75px 0 10px
+	color: #414141
+	font-family: OpenSans
+	font-size: 21px
+	font-weight: 600
+	line-height: 28px
+
+.greeting__image
+	width: 140px
+	height: 140px
+	border-radius: 50%
+	overflow: hidden
+	position: absolute
+	top: -75px;
+	left: 50%;
+	transform: translateX(-50%)
+
+.greeting__portrait
+	width: 140px
+	height: 140px
+	object-fit: cover
+
+.greeting__button_section
+	background-color: $main-color
+	padding: 20px 0 20px
+	border-radius: 0 0 10px 10px
+
+.greeting_btn__link
+	display: inline-block
+	color: #fff
+	font-size: 14px
+	font-weight: 700
+	padding: 8px 0 8px
+	border: 2px solid #fff
+	width: 140px
+	border-radius: 25px
+//	margin: 0 auto
+	

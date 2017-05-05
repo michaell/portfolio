@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Омелько Михаил сайт-портфолио</title>
+	<link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="head">
+			<div class="container">
+				<div class="аbout_information">
+					<div class="about_information__portrait">
+						<img src="img/content/icon_hello_page.jpg" class="about_information__image" alt="Омелько М.М. - фото">
+					</div>
+					<div class="about_information__name">
+						Омелько Михаил
+					</div>
+				</div>
+				<button class="contacts">
+					<div class="contacts__underline">  <!--					Что-то тут не так) Зачем этот div? Border можно задать непосредственнно для button, так же как и другие стили. ---------- Я button выравнивал по вертикали, выставляя высоту строки, равную высоте хедера, поэтому бордером подчеркивание сделать не вышло - он слишком низко получался ... Поэтому пришлось изобрести костыль
+					-- Позиционирование line-height не делают. А вот как раз отступ от подчеркивания им сдледлать можно, а само подчеркивание text-decoration. Над кнопочкой надо поработать. -->
+						Мои контакты
+					 </div>
+				</button>
+			</div>
+		</header>
+			
+		<section class="content"> <!-- Почему тут у тебя section? Ответить можно тут или в нашем чатике) --------- Ну во-первых потому что section был на макете:) Во-вторых по документации тоже подходит вроде бы (The <section> element represents a generic section of a document or application.)  Или лучше использовать обычный div? в данном случае 
+		-- Да уж, ответ порадовал) Нет, здесь ты использовал этот семантический тег для оформления. https://web-standards.ru/articles/avoiding-html5-mistakes/-->
+			<div class="container">
+				<aside class="sidebar"> 
+					<nav class="navigation">
+						<ul class="navigation__list">
+							<li class="navigation__item">
+								<a href="#" class="navigation__link">
+									<span class="navigation__icon fa fa-user-secret"></span>
+									<span class="navigation__text">Обо мне</span>
+								</a>
+							</li>
+							<li class="navigation__item">
+								<a href="career.html" class="navigation__link">
+									<span class="navigation__icon fa-rocket fa"></span>
+									<span class="navigation__text">Карьерный путь</span>
+								</a>
+							</li>
+							<li class="navigation__item">
+								<a href="portfolio.html" class="navigation__link">
+									<span class="navigation__icon fa fa-briefcase"></span>
+									<span class="navigation__text">Портфолио</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</aside>
+				<main class="page_content page_content__about">
+					<div class="portrait">
+						<div class="portrait__face">
+							<img src="img/content/icon_about_page.jpg" class="portrait__image" alt="Омелько М.М. - фото">
+						</div>
+					</div>
+					<div class="page_description"> <!-- А вот тут как раз можно вспомнить про новые семантические теги HTML5 ----------Что тут можно использовать? Article врядли.. Убрать section сверху и использовать здесь? 
+					-- Почитай сатью выше, она даст тебе ответы. Все путаются в начале с section, article и div. Просто несколько раз прочитай и оно придет))-->
+						<h1 class="page_title page_title__about">Обо мне</h1>
+						<div class="page_description__text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt repudiandae dolorem, consequatur omnis delectus ullam architecto animi. Esse, deleniti, labore? Quisquam ea quod numquam, expedita alias nemo deserunt. Eos repellendus quod temporibus dicta nulla dolore, expedita vero dolorem magni molestiae.
+							</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam magni quam perferendis voluptate earum ut accusantium debitis quasi minima expedita quos qui laborum, nisi, odit rerum nemo, officia et non sapiente voluptatum quae architecto unde rem. Dolor esse suscipit maiores omnis illum itaque rerum tenetur laborum laudantium illo numquam tempore quae, vitae asperiores, quis aperiam facilis recusandae voluptates fuga voluptatibus.</p>
+							<p>
+								Интернет сообщество очень интересно.
+							</p>
+		
+						</div>
+						<div class="about_btn">
+							<div class="about_btn__btn">
+								<a href="#" class="about_btn__link">
+									<span class="about_btn__icon fa fa-download"></span>Скачать резюме
+								</a>
+							</div>
+						</div>
+					</div>
+				</main>
+			</div>
+		</section>
+	</div>
+	
+	<footer class="footer">
+		<div class="container">
+			<div class="design_information">
+				<div class="design_information__copyright">
+					&copy Дизайн сайта был разработан в школе Loftschool
+				</div>
+			</div>
+			<div class="socials">
+				<div class="socials__list">
+					<a href="#" class="socials__link socials__link--fb"></a>
+					<a href="#" class="socials__link socials__link--vk"></a>
+					<a href="#" class="socials__link socials__link--tw"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
