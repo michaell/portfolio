@@ -4,20 +4,89 @@
   padding: 10px 0 10px
 
 .аbout_information
-  float: left
+	float: left
 
 .contacts
+	position: relative
 	float: right
+	text-align: right
+	height: 60px
+	&:before
+		display: inline-block
+		height: 100%
+		vertical-align: middle
+		content: ''
+	&:hover
+		.contacts__dropdown
+			left: 50%
+			opacity: 1
+
+.contacts__button
 	color: #32c3e5
 	font-family: "Fira Sans"
 	font-weight: 700
-	line-height: 60px
+	display: inline-block
+	vertical-align: middle
+	border-bottom: 1px dotted $main-color 
+	transition: all .5s ease
+	&:hover
+		color: #e85f61
+		border-bottom: 1px dotted #e85f61
 
-.contacts__underline
-  border-bottom: 1px dotted #32c3e5
-  padding-bottom: 0px
-  height: 44px
+.contacts__dropdown
+	background-color: white
+	border: 1px solid #dedede
+	border-radius: 10px
+	padding: 10px
+	position: absolute
+	top: 100%
+	transform: translateX(-65%)
+	z-index: 20
+	left: -9999px
+	opacity: 0
+	transition: opacity .2s
+	&:before
+		content: ''
+		display: block
+		left: 0
+		right: 0
+		height: 30px
+		top: -30px
+		position: absolute
 
+.contacts__triangle
+	width: 0
+	height: 0
+	border: 6px solid transparent
+	border-top-width: 0px
+	border-bottom: 10px solid #dedede
+	position: absolute
+	top: -11px
+	left: 50%
+	transform: translateX(-50%)
+	&:before
+		content: ""
+		width: 0
+		height: 0
+		border: 6px solid transparent
+		border-top-width: 0px
+		border-bottom: 10px solid #fff 
+		position: absolute
+		top: 3px;
+		left: -6px;
+	
+.contacts__item
+	white-space: nowrap
+
+.contacts__text
+	color: #414141
+	font-size: 18px
+	font-weight: 300
+
+.contacts__icon
+	@expand .contacts__text
+	color: $main-color
+	
 .about_information__portrait
   display: inline-block
   width: 60px

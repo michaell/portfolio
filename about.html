@@ -19,17 +19,45 @@
 						Омелько Михаил
 					</div>
 				</div>
-				<button class="contacts">
-					<div class="contacts__underline">  <!--					Что-то тут не так) Зачем этот div? Border можно задать непосредственнно для button, так же как и другие стили. ---------- Я button выравнивал по вертикали, выставляя высоту строки, равную высоте хедера, поэтому бордером подчеркивание сделать не вышло - он слишком низко получался ... Поэтому пришлось изобрести костыль
-					-- Позиционирование line-height не делают. А вот как раз отступ от подчеркивания им сдледлать можно, а само подчеркивание text-decoration. Над кнопочкой надо поработать. -->
-						Мои контакты
-					 </div>
-				</button>
+					<div class="contacts"> <!--Переделал выравнивание кнопки и, соответственно, упростил разметку. Я выровнял способом чз псевдоэлемент, который ты раскритиковала) но мне он нравится)-->
+						<button class="contacts__button">
+							Мои контакты
+						</button>
+						<div class="contacts__dropdown">
+							<div class="contacts__triangle"></div>
+							<ul class="contacts__list">
+								<li class="contacts__item">
+									<a href="mailto:omelkom@gmail.com" class="contacts__link">
+										<span class="contacts__icon fa fa-envelope"></span>
+										<span class="contacts__text">omelkom@gmail.com</span>
+									</a>
+								</li>
+								<li class="contacts__item">
+									<a href="tel:+79242333333" class="contacts__link">
+										<span class="contacts__icon fa fa-phone"></span>
+										<span class="contacts__text">+7(924)000000</span>
+									</a>
+								</li>
+								<li class="contacts__item">
+									<a href="skype:Mikhail_" class="contacts__link">
+										<span class="contacts__icon fa fa-skype"></span>
+										<span class="contacts__text">Mikhail</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 			</div>
 		</header>
 			
-		<section class="content"> <!-- Почему тут у тебя section? Ответить можно тут или в нашем чатике) --------- Ну во-первых потому что section был на макете:) Во-вторых по документации тоже подходит вроде бы (The <section> element represents a generic section of a document or application.)  Или лучше использовать обычный div? в данном случае 
-		-- Да уж, ответ порадовал) Нет, здесь ты использовал этот семантический тег для оформления. https://web-standards.ru/articles/avoiding-html5-mistakes/-->
+		<div class="content"> <!-- Почему тут у тебя section? Ответить можно тут или в нашем чатике) --------- Ну во-первых потому что section был на макете:) Во-вторых по документации тоже подходит вроде бы (The <section> element represents a generic section of a document or application.)  Или лучше использовать обычный div? в данном случае 
+		-- Да уж, ответ порадовал) Нет, здесь ты использовал этот семантический тег для оформления. https://web-standards.ru/articles/avoiding-html5-mistakes/
+		
+		
+		Заменил section на обычный div
+		
+		
+		-->
 			<div class="container">
 				<aside class="sidebar"> 
 					<nav class="navigation">
@@ -61,8 +89,16 @@
 							<img src="img/content/icon_about_page.jpg" class="portrait__image" alt="Омелько М.М. - фото">
 						</div>
 					</div>
-					<div class="page_description"> <!-- А вот тут как раз можно вспомнить про новые семантические теги HTML5 ----------Что тут можно использовать? Article врядли.. Убрать section сверху и использовать здесь? 
-					-- Почитай сатью выше, она даст тебе ответы. Все путаются в начале с section, article и div. Просто несколько раз прочитай и оно придет))-->
+					<section class="page_description"> <!-- А вот тут как раз можно вспомнить про новые семантические теги HTML5 ----------Что тут можно использовать? Article врядли.. Убрать section сверху и использовать здесь? 
+					-- Почитай сатью выше, она даст тебе ответы. Все путаются в начале с section, article и div. Просто несколько раз прочитай и оно придет))
+					
+					
+					
+					Заменил на section, руководствуясь тем, что у этого раздела страницы есть свой заголовок
+					
+					
+					
+					-->
 						<h1 class="page_title page_title__about">Обо мне</h1>
 						<div class="page_description__text">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt repudiandae dolorem, consequatur omnis delectus ullam architecto animi. Esse, deleniti, labore? Quisquam ea quod numquam, expedita alias nemo deserunt. Eos repellendus quod temporibus dicta nulla dolore, expedita vero dolorem magni molestiae.
@@ -80,10 +116,10 @@
 								</a>
 							</div>
 						</div>
-					</div>
+					</section>
 				</main>
 			</div>
-		</section>
+		</div>
 	</div>
 	
 	<footer class="footer">
