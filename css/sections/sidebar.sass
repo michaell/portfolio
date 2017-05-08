@@ -14,16 +14,18 @@
   padding-bottom: 17px
 
 .navigation__link
-  color: #414141
-  padding: 7px 24px 9px 0
-  &:visited
-    color: #414141
-  &:hover
-    color: $main-color
-    transition: color .2s ease
-    border-right: 6px solid $main-color
-    margin-right: -6px
-    transition: color .2s ease
+	color: #414141
+	padding: 7px 24px 9px 0
+	&:hover
+		color: $main-color
+		transition: color .2s ease
+	&:active
+		font-weight: 700
 
 .navigation__icon
   margin-right: 3px
+
+.navigation__link--active
+	color: $main-color
+	border-right: 6px solid $main-color
+	margin-right: -6px

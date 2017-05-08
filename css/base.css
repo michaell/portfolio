@@ -3419,25 +3419,24 @@ button {
 }
 
 .greeting-wrapper {
-  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 100vh;
-}
-
-.greeting-wrapper:before {
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  content: '';
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .greeting {
-  position: relative;
+  text-align: center;
   width: 300px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .greeting__name {
@@ -3483,10 +3482,15 @@ button {
   border: 2px solid #fff;
   width: 140px;
   border-radius: 25px;
+  transition: all .3s ease;
+}
+
+.greeting_btn__link:hover {
+  color: #33c1e3;
+  background-color: #fff;
 }
 
 .content {
-  background-color: #f6f6f6;
   padding-top: 30px;
   height: 100%;
 }
@@ -3502,14 +3506,13 @@ button {
   overflow: hidden;
   border-radius: 50%;
   margin: -6px 56px;
-  position: relative;
   border: 5px solid white;
 }
 
 .portrait__image {
-  position: absolute;
-  top: -15px;
-  left: -30px;
+  object-fit: cover;
+  width: 230px;
+  height: 230px;
 }
 
 .page_title__about {
@@ -3544,7 +3547,8 @@ button {
 }
 
 .about_btn__link:hover {
-  background-color: #efcfcf;
+  color: #fff;
+  background-color: #e85f61;
   transition: all 0.4s ease;
 }
 
@@ -3598,6 +3602,7 @@ button {
   display: inline-block;
   text-align: left;
   position: relative;
+  transition: all .3s ease;
 }
 
 .jobs__item:hover {
@@ -3617,6 +3622,10 @@ button {
 
 .jobs__item:hover .jobs__occupation, .jobs__item:hover .jobs__time {
   color: white;
+}
+
+.jobs__item {
+  transition: all .3s ease;
 }
 
 .jobs__item:after, .jobs__item:before {
@@ -3765,6 +3774,11 @@ button {
   opacity: 1;
 }
 
+.contacts:hover .contacts__button {
+  color: #e85f61;
+  border-bottom: 1px dotted #e85f61;
+}
+
 .contacts__button {
   color: #32c3e5;
   font-family: "Fira Sans";
@@ -3775,16 +3789,10 @@ button {
   transition: all .5s ease;
 }
 
-.contacts__button:hover {
-  color: #e85f61;
-  border-bottom: 1px dotted #e85f61;
-}
-
 .contacts__dropdown {
   background-color: white;
   border: 1px solid #dedede;
   border-radius: 10px;
-  padding: 10px;
   position: absolute;
   top: 100%;
   -webkit-transform: translateX(-65%);
@@ -3834,6 +3842,8 @@ button {
 
 .contacts__item {
   white-space: nowrap;
+  border-bottom: 1px solid #dedede;
+  padding: 8px 20px;
 }
 
 .contacts__text {
@@ -3899,6 +3909,10 @@ button {
   margin-right: 0;
 }
 
+.works-item:hover .works-title {
+  color: #e85f61;
+}
+
 .works-pic-img {
   vertical-align: middle;
   width: 100%;
@@ -3927,6 +3941,7 @@ button {
   font-weight: 400;
   line-height: 24px;
   margin: 0;
+  transition: all .3s ease;
 }
 
 .works-type-title {
@@ -3966,20 +3981,23 @@ button {
   padding: 7px 24px 9px 0;
 }
 
-.navigation__link:visited {
-  color: #414141;
-}
-
 .navigation__link:hover {
   color: #33c1e3;
   transition: color .2s ease;
-  border-right: 6px solid #33c1e3;
-  margin-right: -6px;
-  transition: color .2s ease;
+}
+
+.navigation__link:active {
+  font-weight: 700;
 }
 
 .navigation__icon {
   margin-right: 3px;
+}
+
+.navigation__link--active {
+  color: #33c1e3;
+  border-right: 6px solid #33c1e3;
+  margin-right: -6px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -4018,6 +4036,10 @@ button {
   .navigation__item {
     display: inline-block;
   }
+  .navigation__link--active {
+    border-right: 0;
+    margin-right: 0;
+  }
   .navigation__list {
     text-align: left;
     margin: 0;
@@ -4041,6 +4063,10 @@ button {
   }
   .portrait__face {
     margin: 0 auto;
+    width: 176px;
+    height: 176px;
+  }
+  .portrait__image {
     width: 176px;
     height: 176px;
   }
@@ -4096,6 +4122,10 @@ button {
     -webkit-transform: translateX(-90%);
     -ms-transform: translateX(-90%);
     transform: translateX(-90%);
+  }
+  .contacts:hover .contacts__button {
+    border-bottom: 0px;
+    background: url(../img/icons/phone-hover.png) center center no-repeat;
   }
   .contacts__triangle {
     left: 90%;
@@ -4238,9 +4268,6 @@ button {
   .container {
     width: 95%;
   }
-  .greeting {
-    max-width: 300px;
-  }
   .content {
     padding-top: 15px;
   }
@@ -4260,6 +4287,11 @@ button {
     display: none;
   }
   .portrait__face {
+    width: 140px;
+    height: 140px;
+  }
+  .portrait__image {
+    object-fit: cover;
     width: 140px;
     height: 140px;
   }
